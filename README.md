@@ -3,7 +3,7 @@ This repository is a resource for anyone interested in implementing the basics o
 
 ## Implementation
 ### Prerequirest
-The Gazebo simulation environment and the ROS environment and the integration of these two are required to use this method. (Used ROS version: Noetic, Gazebo version:1.12)
+The Gazebo simulation environment and the ROS environment and the integration of these two are required to use this method. (Used ROS version: Noetic, Gazebo version:11.12.0)
 
 You can use the following link to install these:https://classic.gazebosim.org/tutorials?tut=install_ubuntu
 

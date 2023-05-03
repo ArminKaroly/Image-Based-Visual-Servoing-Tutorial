@@ -6,6 +6,7 @@ from scipy.spatial.transform import Rotation as R
 import numpy as np
 from cv_bridge import CvBridge
 import cv2
+import sys
 import os
 
 
@@ -13,7 +14,7 @@ bridge = CvBridge()
 class Datas:
   def image_callback(self,msg):
         cv2_img = bridge.imgmsg_to_cv2(msg, "bgr8")
-        cv2.imwrite('/home/karol/catkin_ws/src/pack/scripts/Feature_image.jpg',cv2_img)
+        cv2.imwrite('Feature_image.jpg',cv2_img)
         
   def position_callback(self,msg):
       
@@ -29,10 +30,11 @@ class Datas:
       r = R.from_matrix(r)
       r = r.as_euler('xyz',degrees = True)
       camera_coords = np.array([cam_coords.position.x,cam_coords.position.y,cam_coords.position.z,r[0],r[1],r[2]])      
-      file1 = open('/home/karol/catkin_ws/src/pack/scripts/Feature_image.txt', 'w')
+      file1 = open('Feature_image.txt', 'w')
       file1.writelines(str(camera_coords[2]))
       
 if __name__ == '__main__':
+    os.chdir(sys.path[0])
     rospy.init_node('IBVS')
     ibvs = Datas()
     rospy.Subscriber('/gazebo/model_states', ModelStates, ibvs.position_callback)

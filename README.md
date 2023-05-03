@@ -7,7 +7,7 @@ The Gazebo simulation environment and the ROS environment and the integration of
 
 You can use the following link to install these:https://classic.gazebosim.org/tutorials?tut=install_ubuntu
 
-After the installation build you can build the 'pack' package and use that.
+After the installation you can build the 'pack' package.
 
 ### Using the package
 

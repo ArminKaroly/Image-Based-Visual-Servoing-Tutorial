@@ -158,6 +158,7 @@ class Datas:
 ##################################
 ##################################                     
 if __name__ == '__main__':
+    os.chdir(sys.path[0])
     rospy.init_node('IBVS')
     ibvs = Datas(1/60,3,0.01)
     rospy.Subscriber('/camera1/image_raw', Image, ibvs.image_callback)

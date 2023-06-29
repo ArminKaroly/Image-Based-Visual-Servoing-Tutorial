@@ -67,22 +67,8 @@ Start image based visual servoing method:
 
     rosrun pack IBVS.py
     
-The moving of the camera object can be seen on the Gazebo simulation window, and the error vector can be seen on the commander:
-![](https://i.imgur.com/kThQWK7.jpg)
-
-![](https://i.imgur.com/9v7HmLq.jpg)
-
-![](https://i.imgur.com/XCJuzJG.jpg)
-
-![](https://i.imgur.com/cIjHVzi.jpg)
-
-![](https://i.imgur.com/bsFwcOi.jpg)
-
-![](https://i.imgur.com/Z9dgrse.jpg)
-
-![](https://i.imgur.com/oV1SVRw.jpg)
-
-![](https://i.imgur.com/ESXqDXa.jpg)
+The movement of the camera object can be seen on the Gazebo simulation window, and the error vector can be seen on the commander:
+![Camera_movement_v1](https://github.com/ArminKaroly/Image-Based-Visual-Servoing-Tutorial/assets/41468450/994e9e5e-3c01-42d6-903c-7c8749459f9e)
 
 The camera position during the method: 
 
